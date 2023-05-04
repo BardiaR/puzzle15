@@ -12,6 +12,7 @@
   color: #323232;
   cursor: pointer;
   border-radius: 6px;
+  transition: .3s;
   &.disabled {
     pointer-events: none;
     background-color: transparent;
