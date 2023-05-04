@@ -7,7 +7,11 @@ const Tiles = ({ number, moveTiles }) => {
     <div
       className={`tile ${number.value === 16 ? "disabled" : ""} slot--${
         number.index
-      }` }
+      } ${
+        number.value === number.index + 1
+          ? "currect"
+          : ""
+      } `}
       onClick={() => moveTiles(number)}
     >
       {number.value === 16 ? "" : number.value}

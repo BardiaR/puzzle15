@@ -15,7 +15,7 @@
   transition: .3s;
   &.disabled {
     pointer-events: none;
-    background-color: transparent;
+    background-color: transparent !important;
   }
   &.slot-- {
     &0 {
@@ -82,5 +82,9 @@
       left: calc(3 * 160px);
       top: calc(3 * 160px);
     }
+  }
+  &.currect {
+    background-color: rgb(42, 99, 42);
+    color: #fff;
   }
 }
