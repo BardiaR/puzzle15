@@ -12,7 +12,7 @@ const Boards = () => {
     new Array(16)
       .fill()
       .map((item, index) => index + 1)
-        .sort(() => Math.random() - 0.5)
+      .sort(() => Math.random() - 0.5)
       .map((item, index) => ({ value: item, index }));
 
   const [numbers, setNumbers] = useState([]);

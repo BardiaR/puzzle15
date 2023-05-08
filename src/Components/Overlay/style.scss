@@ -1,16 +1,27 @@
 @import "./../../assets/scss/mixin/mixin.scss";
 
 .overlay {
-    
-    width: 150px;
-    height: 150px;
-    
-    border-radius: 4px;
-    font-size: 40px;
-    font-weight: 600;
-    font-family: "Tahoma";
-    &.disabled {
-        pointer-events: none;
-        background-color: transparent;
-    }
+  width: 150px;
+  height: 150px;
+  border-radius: 4px;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Tahoma";
+  &.disabled {
+    pointer-events: none;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .overlay {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .overlay {
+    width: 50px;
+    height: 50px;
+  }
 }
